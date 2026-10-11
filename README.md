@@ -23,6 +23,38 @@ python analysis.py
 ## Results
 Results are written to `results.json` (and a chart to `figures/`).
 
+## Results (latest run)
+
+On the SNAP as-caida20071105 AS-graph subsample, a standard random-restart swap local search reached 99.93% held-out path coverage (mean over k in {10,20}, budgets 0.5-8 s, 5 seeds), while my greedy-seeded swap search reached 99.94%, a negligible gain near the ceiling.
+
+| Metric | Value |
+|---|---|
+| baseline_score | 0.9993 |
+| baseline_score_std | 0.0001361 |
+| baseline_search_coverage | 1 |
+| baseline_time_to_95pct_s | 0.00483 |
+| baseline_heldout_k10_b0.5 | 0.9994 |
+| baseline_heldout_k10_b2.0 | 0.9994 |
+| baseline_heldout_k10_b8.0 | 0.9994 |
+| baseline_heldout_k20_b0.5 | 0.9991 |
+| baseline_heldout_k20_b2.0 | 0.9991 |
+| baseline_heldout_k20_b8.0 | 0.9991 |
+| improved_score | 0.9994 |
+| improved_score_std | 1.11e-16 |
+| improved_search_coverage | 1 |
+| improved_time_to_95pct_s | 0.004032 |
+| improved_heldout_k10_b0.5 | 0.9994 |
+| improved_heldout_k10_b2.0 | 0.9994 |
+| improved_heldout_k10_b8.0 | 0.9994 |
+| improved_heldout_k20_b0.5 | 0.9994 |
+| improved_heldout_k20_b2.0 | 0.9994 |
+| improved_heldout_k20_b8.0 | 0.9994 |
+| improvement | 0.0001667 |
+
+Run on 2026-10-11. Full output: [results.json](results.json) · [run.log](run.log)
+
+Notes: n_rows/n_train/n_test count sampled node pairs, not nodes. Each pair uses a single shortest path (networkx tie-breaking). Seeds 42-46 (5 seeds). Time-to-95% is measured on 8 s runs relative to the best search coverage seen for that k, censored at 8 s, and includes greedy seeding time. Wall-clock budgets make results machine-dependent. Tuning uses search-pair coverage with separate seeds (no CV). The baseline's patience is fixed and untuned. The paper's exact algorithm is unknown.
+
 ## Reference
 
 This project is motivated by the following paper:
