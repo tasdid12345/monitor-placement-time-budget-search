@@ -1,0 +1,41 @@
+{
+  "question": "Under the same tight time budgets, can a greedy-seeded swap local search beat a random-restart local search at choosing k monitors covering the most shortest paths?",
+  "method": "Largest-component ~1000-node subsample of a SNAP AS graph; one shortest path per sampled node pair, split 70/30 into search/held-out pairs; both methods use the same incidence-based coverage evaluator and wall-clock budgets; improved parameters tuned on search pairs only.",
+  "dataset": {
+    "name": "SNAP as-caida20071105 (BFS subsample ~1000 nodes)",
+    "source_url": "https://snap.stanford.edu/data/as-caida20071105.txt.gz",
+    "n_rows": 6000,
+    "n_train": 4200,
+    "n_test": 1800,
+    "same_as_paper": false,
+    "baseline_is_papers_method": false
+  },
+  "metric_name": "held-out path coverage (fraction of held-out pairs whose shortest path contains a monitor), mean over k in {10,20}, budgets {0.5,2,8}s, 5 seeds",
+  "higher_is_better": true,
+  "baseline": "Random-restart first-improvement swap local search (random starts, restart after stagnation), untuned stand-in for a generic metaheuristic.",
+  "improved": "Greedy max-coverage seed + sampled best-swap local search with perturbation restarts; neighbourhood sample size and restarts tuned on search pairs per (k, budget).",
+  "metrics": {
+    "baseline_score": 0.9992777777777778,
+    "baseline_score_std": 0.0001360827634879756,
+    "baseline_search_coverage": 1.0,
+    "baseline_time_to_95pct_s": 0.0048302951000096074,
+    "baseline_heldout_k10_b0.5": 0.9994444444444446,
+    "baseline_heldout_k10_b2.0": 0.9994444444444446,
+    "baseline_heldout_k10_b8.0": 0.9994444444444446,
+    "baseline_heldout_k20_b0.5": 0.9991111111111112,
+    "baseline_heldout_k20_b2.0": 0.9991111111111112,
+    "baseline_heldout_k20_b8.0": 0.9991111111111112,
+    "improved_score": 0.9994444444444446,
+    "improved_score_std": 1.1102230246251565e-16,
+    "improved_search_coverage": 1.0,
+    "improved_time_to_95pct_s": 0.004031882000009546,
+    "improved_heldout_k10_b0.5": 0.9994444444444446,
+    "improved_heldout_k10_b2.0": 0.9994444444444446,
+    "improved_heldout_k10_b8.0": 0.9994444444444446,
+    "improved_heldout_k20_b0.5": 0.9994444444444446,
+    "improved_heldout_k20_b2.0": 0.9994444444444446,
+    "improved_heldout_k20_b8.0": 0.9994444444444446,
+    "improvement": 0.00016666666666675933
+  },
+  "notes": "n_rows/n_train/n_test count sampled node pairs, not nodes. Each pair uses a single shortest path (networkx tie-breaking). Seeds 42-46 (5 seeds). Time-to-95% is measured on 8 s runs relative to the best search coverage seen for that k, censored at 8 s, and includes greedy seeding time. Wall-clock budgets make results machine-dependent. Tuning uses search-pair coverage with separate seeds (no CV). The baseline's patience is fixed and untuned. The paper's exact algorithm is unknown."
+}

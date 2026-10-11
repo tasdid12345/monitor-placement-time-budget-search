@@ -1,0 +1,119 @@
+Collecting requests (from -r requirements.txt (line 1))
+  Downloading requests-2.34.2-py3-none-any.whl.metadata (4.8 kB)
+Collecting pandas (from -r requirements.txt (line 2))
+  Downloading pandas-3.0.6-cp311-cp311-manylinux_2_24_x86_64.manylinux_2_28_x86_64.whl.metadata (79 kB)
+Collecting numpy (from -r requirements.txt (line 3))
+  Downloading numpy-2.4.6-cp311-cp311-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl.metadata (6.6 kB)
+Collecting networkx (from -r requirements.txt (line 4))
+  Downloading networkx-3.6.1-py3-none-any.whl.metadata (6.8 kB)
+Collecting matplotlib (from -r requirements.txt (line 5))
+  Downloading matplotlib-3.11.2-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata (80 kB)
+Collecting charset_normalizer<4,>=2 (from requests->-r requirements.txt (line 1))
+  Downloading charset_normalizer-3.5.2-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (46 kB)
+Collecting idna<4,>=2.5 (from requests->-r requirements.txt (line 1))
+  Downloading idna-3.20-py3-none-any.whl.metadata (7.2 kB)
+Collecting urllib3<3,>=1.26 (from requests->-r requirements.txt (line 1))
+  Downloading urllib3-2.8.0-py3-none-any.whl.metadata (7.4 kB)
+Collecting certifi>=2023.5.7 (from requests->-r requirements.txt (line 1))
+  Downloading certifi-2026.7.22-py3-none-any.whl.metadata (2.5 kB)
+Collecting python-dateutil>=2.8.2 (from pandas->-r requirements.txt (line 2))
+  Downloading python_dateutil-2.9.0.post0-py2.py3-none-any.whl.metadata (8.4 kB)
+Collecting contourpy>=1.0.1 (from matplotlib->-r requirements.txt (line 5))
+  Downloading contourpy-1.3.3-cp311-cp311-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl.metadata (5.5 kB)
+Collecting cycler>=0.10 (from matplotlib->-r requirements.txt (line 5))
+  Downloading cycler-0.12.1-py3-none-any.whl.metadata (3.8 kB)
+Collecting fonttools>=4.28.2 (from matplotlib->-r requirements.txt (line 5))
+  Downloading fonttools-4.66.1-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata (130 kB)
+Collecting kiwisolver>=1.3.1 (from matplotlib->-r requirements.txt (line 5))
+  Downloading kiwisolver-1.5.1-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata (5.2 kB)
+Collecting packaging>=20.0 (from matplotlib->-r requirements.txt (line 5))
+  Downloading packaging-26.3-py3-none-any.whl.metadata (3.5 kB)
+Collecting pillow>=9 (from matplotlib->-r requirements.txt (line 5))
+  Downloading pillow-12.3.0-cp311-cp311-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl.metadata (9.1 kB)
+Collecting pyparsing>=3 (from matplotlib->-r requirements.txt (line 5))
+  Downloading pyparsing-3.3.3-py3-none-any.whl.metadata (5.9 kB)
+Collecting six>=1.5 (from python-dateutil>=2.8.2->pandas->-r requirements.txt (line 2))
+  Downloading six-1.17.0-py2.py3-none-any.whl.metadata (1.7 kB)
+Downloading requests-2.34.2-py3-none-any.whl (73 kB)
+Downloading charset_normalizer-3.5.2-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (269 kB)
+Downloading idna-3.20-py3-none-any.whl (69 kB)
+Downloading urllib3-2.8.0-py3-none-any.whl (135 kB)
+Downloading pandas-3.0.6-cp311-cp311-manylinux_2_24_x86_64.manylinux_2_28_x86_64.whl (11.1 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 11.1/11.1 MB 20.8 MB/s  0:00:00
+Downloading numpy-2.4.6-cp311-cp311-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl (16.9 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 16.9/16.9 MB 46.0 MB/s  0:00:00
+Downloading networkx-3.6.1-py3-none-any.whl (2.1 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.1/2.1 MB 55.7 MB/s  0:00:00
+Downloading matplotlib-3.11.2-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (9.9 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 9.9/9.9 MB 61.2 MB/s  0:00:00
+Downloading certifi-2026.7.22-py3-none-any.whl (136 kB)
+Downloading contourpy-1.3.3-cp311-cp311-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl (355 kB)
+Downloading cycler-0.12.1-py3-none-any.whl (8.3 kB)
+Downloading fonttools-4.66.1-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (5.4 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 5.4/5.4 MB 77.4 MB/s  0:00:00
+Downloading kiwisolver-1.5.1-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (1.4 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.4/1.4 MB 82.5 MB/s  0:00:00
+Downloading packaging-26.3-py3-none-any.whl (129 kB)
+Downloading pillow-12.3.0-cp311-cp311-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl (6.9 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 6.9/6.9 MB 72.8 MB/s  0:00:00
+Downloading pyparsing-3.3.3-py3-none-any.whl (126 kB)
+Downloading python_dateutil-2.9.0.post0-py2.py3-none-any.whl (229 kB)
+Downloading six-1.17.0-py2.py3-none-any.whl (11 kB)
+Installing collected packages: urllib3, six, pyparsing, pillow, packaging, numpy, networkx, kiwisolver, idna, fonttools, cycler, charset_normalizer, certifi, requests, python-dateutil, contourpy, pandas, matplotlib
+
+Successfully installed certifi-2026.7.22 charset_normalizer-3.5.2 contourpy-1.3.3 cycler-0.12.1 fonttools-4.66.1 idna-3.20 kiwisolver-1.5.1 matplotlib-3.11.2 networkx-3.6.1 numpy-2.4.6 packaging-26.3 pandas-3.0.6 pillow-12.3.0 pyparsing-3.3.3 python-dateutil-2.9.0.post0 requests-2.34.2 six-1.17.0 urllib3-2.8.0
+graph: 1000 nodes, 1448 edges (https://snap.stanford.edu/data/as-caida20071105.txt.gz)
+search pairs 4200, held-out pairs 1800
+k=10 budget=0.5: tuned (nsample, restarts)=(10, 1)
+        search  heldout
+method                 
+base       1.0   0.9994
+imp        1.0   0.9994
+k=10 budget=2.0: tuned (nsample, restarts)=(10, 1)
+        search  heldout
+method                 
+base       1.0   0.9994
+imp        1.0   0.9994
+k=10 budget=8.0: tuned (nsample, restarts)=(10, 1)
+        search  heldout
+method                 
+base       1.0   0.9994
+imp        1.0   0.9994
+k=20 budget=0.5: tuned (nsample, restarts)=(10, 1)
+        search  heldout
+method                 
+base       1.0   0.9991
+imp        1.0   0.9994
+k=20 budget=2.0: tuned (nsample, restarts)=(10, 1)
+        search  heldout
+method                 
+base       1.0   0.9991
+imp        1.0   0.9994
+k=20 budget=8.0: tuned (nsample, restarts)=(10, 1)
+        search  heldout
+method                 
+base       1.0   0.9991
+imp        1.0   0.9994
+{
+ "baseline_score": 0.9992777777777778,
+ "baseline_score_std": 0.0001360827634879756,
+ "baseline_search_coverage": 1.0,
+ "baseline_time_to_95pct_s": 0.0048302951000096074,
+ "baseline_heldout_k10_b0.5": 0.9994444444444446,
+ "baseline_heldout_k10_b2.0": 0.9994444444444446,
+ "baseline_heldout_k10_b8.0": 0.9994444444444446,
+ "baseline_heldout_k20_b0.5": 0.9991111111111112,
+ "baseline_heldout_k20_b2.0": 0.9991111111111112,
+ "baseline_heldout_k20_b8.0": 0.9991111111111112,
+ "improved_score": 0.9994444444444446,
+ "improved_score_std": 1.1102230246251565e-16,
+ "improved_search_coverage": 1.0,
+ "improved_time_to_95pct_s": 0.004031882000009546,
+ "improved_heldout_k10_b0.5": 0.9994444444444446,
+ "improved_heldout_k10_b2.0": 0.9994444444444446,
+ "improved_heldout_k10_b8.0": 0.9994444444444446,
+ "improved_heldout_k20_b0.5": 0.9994444444444446,
+ "improved_heldout_k20_b2.0": 0.9994444444444446,
+ "improved_heldout_k20_b8.0": 0.9994444444444446,
+ "improvement": 0.00016666666666675933
+}
